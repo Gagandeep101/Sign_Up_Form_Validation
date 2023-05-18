@@ -24,3 +24,18 @@ function validate_form_data() {
     }
 }
 
+function validate_user_name(name) {
+    if (name.value.length > 11) {
+        alert(name.getAttribute("placeholder") + " must be less than 10 characters");
+    }
+    else if (!name.value.match(/^[A-Za-z]+$/)) {
+        alert(name.getAttribute("placeholder") + " can only contain letters");
+    }
+    else {
+        var info_img_1 = document.querySelector("#info_img_1");
+        var info_img_2 = document.querySelector("#info_img_2");
+        name.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-right:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-left: none;");
+        info_img_1.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-left:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-right: none;");
+        info_img_2.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-left:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-right: none;");
+    }
+}
