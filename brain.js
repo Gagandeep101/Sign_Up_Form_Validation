@@ -52,3 +52,23 @@ function validate_user_phone_number(phone_number) {
         info_img_3.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-left:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-right: none;");
     }
 }
+
+function validate_user_password(password, confirm_password) {
+    if (password.value.length < 8) {
+        alert(password.getAttribute("placeholder") + " must be at least 8 characters");
+    }
+    else if (!password.value.match(/^[A-Za-z]\w{7,14}$/)) {
+        alert(password.getAttribute("placeholder") + " must be contains only letters and numbers");
+    }
+    else if (password.value !== confirm_password.value) {
+        alert("Passwords do not match . Please try again");
+    }
+    else {
+        password.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-right:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-left: none;");
+        confirm_password.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-right:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-left: none;");
+        var info_img_4 = document.querySelector("#info_img_4");
+        var info_img_5 = document.querySelector("#info_img_5");
+        info_img_4.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-left:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-right: none;");
+        info_img_5.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-left:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-right: none;");
+    }
+}
