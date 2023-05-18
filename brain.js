@@ -34,9 +34,14 @@ function validate_user_name(name) {
     else {
         var info_img_1 = document.querySelector("#info_img_1");
         var info_img_2 = document.querySelector("#info_img_2");
+        if (name.getAttribute("placeholder") == "First Name"){
+            info_img_1.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-left:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-right: none;");
+        }
+        else{
+
+            info_img_2.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-left:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-right: none;");
+        }
         name.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-right:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-left: none;");
-        info_img_1.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-left:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-right: none;");
-        info_img_2.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-left:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-right: none;");
     }
 }
 function validate_user_phone_number(phone_number) {
