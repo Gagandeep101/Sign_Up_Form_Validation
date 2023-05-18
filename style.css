@@ -65,5 +65,24 @@ body {
   ::placeholder {
     color: white;
   }
+  
+  img {
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0.5px;
+    position: relative;
+    top: 14px;
+    left: 4px;
+    background: rgba(0, 0, 0, 0.301);
+  }
 
+  #info_img_2,
+  #info_img_4 {
+    top: 13.8px;
+  }
+  
   
