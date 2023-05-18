@@ -39,3 +39,16 @@ function validate_user_name(name) {
         info_img_2.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-left:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-right: none;");
     }
 }
+function validate_user_phone_number(phone_number) {
+    if (phone_number.value.length > 11) {
+        alert(phone_number.getAttribute("placeholder") + " must be at most 10 characters");
+    }
+    else if (!phone_number.value.match(/^[0-9]+$/)) {
+        alert(phone_number.getAttribute("placeholder") + " can only contain numbers");
+    }
+    else {
+        phone_number.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-right:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-left: none;");
+        var info_img_3=document.querySelector("#info_img_3");
+        info_img_3.setAttribute("style", "border-top:4px solid  RGB(255 136 8); border-left:4px solid  RGB(255 136 8); border-bottom:4px solid  RGB(255 136 8);border-right: none;");
+    }
+}
