@@ -43,5 +43,27 @@ body {
     align-items: center;
     justify-content: center;
   }
+  
+  input {
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.301);
+  }
+  input:focus {
+    background: rgba(0, 0, 0, 0.301);
+    outline: none;
+  }
+  ::placeholder {
+    color: white;
+  }
 
   
