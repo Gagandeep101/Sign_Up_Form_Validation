@@ -136,9 +136,16 @@ body {
       padding: 1.3px;
       height: 26px;
       width: 25px;
-      top: 12.7px;
+      top: 12.5px;
       left: 4.4px;
     }
+    #info_img_2{
+      top: 12.3px;
+    }
+    #info_img_4 {
+      top: 13px;
+    }
+  
     #Sign_Up_btn {
       left: 65px;
       margin-top: 15px;
